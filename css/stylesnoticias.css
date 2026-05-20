@@ -1,0 +1,236 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+    background: #0b1220;
+    color: #fff;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #11182d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* NAVBAR */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #6c63ff;
+}
+
+/* LOGO */
+.logo h1{
+    font-size:32px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#6c63ff;
+}
+
+.search {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* SEARCH */
+.search-box input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: #ffffff;
+    color: white;
+}
+
+/* HERO */
+.hero-container {
+    margin: 60px auto;
+    padding: 50px;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 20px;
+
+    background:
+        linear-gradient(rgba(11, 18, 32, 0.85), rgba(11, 18, 32, 0.95)),
+        url("https://www.esneca.com/wp-content/uploads/evolucion-inteligencia-artificial-1200x900.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 1px solid rgba(124, 92, 255, 0.2);
+
+    box-shadow:
+        0 0 0 1px rgba(124, 92, 255, 0.1),
+        0 20px 60px rgba(0, 0, 0, 0.6);
+
+    backdrop-filter: blur(6px);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+/* LAYOUT */
+.news-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    padding: 40px 60px;
+}
+
+/* CARDS */
+.news-card-large {
+    display: flex;
+    gap: 20px;
+    background: #121a2f;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.news-card-large:hover {
+    transform: translateY(-5px);
+}
+
+.news-card-large img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.news-card-large h2 {
+    margin: 10px 0;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #121a2f;
+    padding: 20px;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.trend {
+    background: #1a1f3a;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ARTICLE */
+.article {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.article h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.article h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #a78bfa;
+}
+
+.article p {
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.article ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.article li {
+    margin-bottom: 8px;
+}
+
+.meta {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.article-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+/* PAGINACIÓN */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    border: none;
+    background: #1a1f3a;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.pagination .active {
+    background: #7c5cff;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+}
